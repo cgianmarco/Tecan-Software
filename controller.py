@@ -4,7 +4,6 @@ from fileloader import *
 from extractor import FileParser
 from filesaver import *
 import os
-import logger
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 from random import randint
@@ -40,7 +39,6 @@ class Listener:
 		self.view.update_values_list(values)
 
 	def on_selected_changed(self, event):
-		logger.log("SELECTED" + str(event))
 		self.view.clear_datagrid_color()
 		selected = event
 		self.view.update_datagrid_color(selected)

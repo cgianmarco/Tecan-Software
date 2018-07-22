@@ -283,7 +283,7 @@ class View(QMainWindow):
         return self.stacks[self.current_stack]
 
     def get_file_name(self):
-        filename = QFileDialog.getOpenFileName(self, 'Open file', "Excel files (*.xlsx)")
+        filename = QFileDialog.getOpenFileName(self, 'Open file')
         return filename
 
     def process_trigger(self, q):

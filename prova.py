@@ -1,11 +1,11 @@
 from PyQt4 import QtCore, QtGui
-from banner import Ui_Banner
+from start_window import Ui_MainWindow
 from controller import Controller
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 import time
 
-class Logic(Ui_Banner, QMainWindow):
+class Logic(Ui_MainWindow, QMainWindow):
 	def __init__(self, *args, **kwargs):
 		QMainWindow.__init__(self, *args, **kwargs)
 		self.setupUi(self)
@@ -13,7 +13,7 @@ class Logic(Ui_Banner, QMainWindow):
 		self.pushButton.clicked.connect(self.buttonClicked)
 
 	def get_file_name(self):
-		filename = QFileDialog.getOpenFileName(self, 'Open file', "Excel files (*.xlsx)")
+		filename = QFileDialog.getOpenFileName(self, 'Open file')
 		return filename
 
 	def buttonClicked(self):

@@ -206,8 +206,8 @@ class View(QMainWindow):
         std.addAction("Standard deviation Wavelengths")
         std.addAction("Standard deviation Time")
 
-        operations.addAction("Start recording")
-        operations.addAction("End recording")
+        # operations.addAction("Start recording")
+        # operations.addAction("End recording")
 
         operations.addAction("Blank Selection")
         blank_reduction = operations.addMenu("Blank Reduction")
@@ -217,8 +217,8 @@ class View(QMainWindow):
         subtract = operations.addMenu("Subtract")
         subtract.addAction("Value from Selected")
 
-        custom = operations.addMenu("Custom")
-        custom.addAction("Operation 1")
+        # custom = operations.addMenu("Custom")
+        # custom.addAction("Operation 1")
 
         # View
         viewmenu = bar.addMenu("View")
